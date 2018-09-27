@@ -11,9 +11,9 @@ class NegociacaoController {
     adiciona(event) {
         event.preventDefault();
 
-        console.log(typeof(this._inputData.value));
-
-        console.log(this._inputData.value);
+        // '2016-11-12'
+        let data = new Date(this._inputData.value.replace(/-/g, ','));
+        console.log(data);
     }
 
 }
